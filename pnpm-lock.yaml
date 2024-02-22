@@ -51,8 +51,8 @@ importers:
         specifier: ^2.3.5
         version: 2.3.5(@types/node@18.19.17)(esbuild@0.14.39)
       '@vanilla-extract/vite-plugin':
-        specifier: ^3.9.3
-        version: 3.9.3(@types/node@18.19.17)(vite@5.1.4)
+        specifier: ^4.0.4
+        version: 4.0.4(@types/node@18.19.17)(vite@5.1.4)
       autoprefixer:
         specifier: ^10.4.17
         version: 10.4.17(postcss@8.4.35)
@@ -79,7 +79,7 @@ importers:
         version: 1.5.12
       next:
         specifier: ^14.1.0
-        version: 14.1.0(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+        version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
       next-auth:
         specifier: 4.24.6
         version: 4.24.6(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
@@ -6800,6 +6800,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [android]
+    dev: false
     optional: true
 
   /@esbuild/android-arm64@0.18.17:
@@ -6822,6 +6823,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm]
     os: [android]
+    dev: false
     optional: true
 
   /@esbuild/android-arm@0.18.17:
@@ -6844,6 +6846,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [android]
+    dev: false
     optional: true
 
   /@esbuild/android-x64@0.18.17:
@@ -6866,6 +6869,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [darwin]
+    dev: false
     optional: true
 
   /@esbuild/darwin-arm64@0.18.17:
@@ -6888,6 +6892,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [darwin]
+    dev: false
     optional: true
 
   /@esbuild/darwin-x64@0.18.17:
@@ -6910,6 +6915,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [freebsd]
+    dev: false
     optional: true
 
   /@esbuild/freebsd-arm64@0.18.17:
@@ -6932,6 +6938,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [freebsd]
+    dev: false
     optional: true
 
   /@esbuild/freebsd-x64@0.18.17:
@@ -6954,6 +6961,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [linux]
+    dev: false
     optional: true
 
   /@esbuild/linux-arm64@0.18.17:
@@ -6976,6 +6984,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm]
     os: [linux]
+    dev: false
     optional: true
 
   /@esbuild/linux-arm@0.18.17:
@@ -6998,6 +7007,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [ia32]
     os: [linux]
+    dev: false
     optional: true
 
   /@esbuild/linux-ia32@0.18.17:
@@ -7020,6 +7030,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [loong64]
     os: [linux]
+    dev: false
     optional: true
 
   /@esbuild/linux-loong64@0.18.17:
@@ -7042,6 +7053,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [mips64el]
     os: [linux]
+    dev: false
     optional: true
 
   /@esbuild/linux-mips64el@0.18.17:
@@ -7064,6 +7076,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [ppc64]
     os: [linux]
+    dev: false
     optional: true
 
   /@esbuild/linux-ppc64@0.18.17:
@@ -7086,6 +7099,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [riscv64]
     os: [linux]
+    dev: false
     optional: true
 
   /@esbuild/linux-riscv64@0.18.17:
@@ -7108,6 +7122,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [s390x]
     os: [linux]
+    dev: false
     optional: true
 
   /@esbuild/linux-s390x@0.18.17:
@@ -7130,6 +7145,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [linux]
+    dev: false
     optional: true
 
   /@esbuild/linux-x64@0.18.17:
@@ -7152,6 +7168,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [netbsd]
+    dev: false
     optional: true
 
   /@esbuild/netbsd-x64@0.18.17:
@@ -7174,6 +7191,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [openbsd]
+    dev: false
     optional: true
 
   /@esbuild/openbsd-x64@0.18.17:
@@ -7196,6 +7214,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [sunos]
+    dev: false
     optional: true
 
   /@esbuild/sunos-x64@0.18.17:
@@ -7218,6 +7237,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [win32]
+    dev: false
     optional: true
 
   /@esbuild/win32-arm64@0.18.17:
@@ -7240,6 +7260,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [ia32]
     os: [win32]
+    dev: false
     optional: true
 
   /@esbuild/win32-ia32@0.18.17:
@@ -7262,6 +7283,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+    dev: false
     optional: true
 
   /@esbuild/win32-x64@0.18.17:
@@ -11686,6 +11708,7 @@ packages:
       '@babel/core': 7.22.9
     transitivePeerDependencies:
       - supports-color
+    dev: false
 
   /@vanilla-extract/babel-plugin-debug-ids@1.0.5:
     resolution: {integrity: sha512-Rc9A6ylsw7EBErmpgqCMvc/Z/eEZxI5k1xfLQHw7f5HHh3oc5YfzsAsYU/PdmSNjF1dp3sGEViBdDltvwnfVaA==}
@@ -11740,15 +11763,15 @@ packages:
       - terser
     dev: true
 
-  /@vanilla-extract/integration@6.2.1(@types/node@18.19.17):
-    resolution: {integrity: sha512-+xYJz07G7TFAMZGrOqArOsURG+xcYvqctujEkANjw2McCBvGEK505RxQqOuNiA9Mi9hgGdNp2JedSa94f3eoLg==}
+  /@vanilla-extract/integration@6.2.4(@types/node@18.19.17):
+    resolution: {integrity: sha512-+AfymNMVq9sEUe0OJpdCokmPZg4Zi6CqKaW/PnUOfDwEn53ighHOMOBl5hAgxYR8Kiz9NG43Bn00mkjWlFi+ng==}
     dependencies:
       '@babel/core': 7.21.8
       '@babel/plugin-syntax-typescript': 7.21.4(@babel/core@7.21.8)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.2
       '@vanilla-extract/css': 1.14.0
       esbuild: 0.17.6
-      eval: 0.1.6
+      eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
       lodash: 4.17.21
@@ -11766,33 +11789,6 @@ packages:
       - supports-color
       - terser
     dev: false
-
-  /@vanilla-extract/integration@6.2.4(@types/node@18.19.17):
-    resolution: {integrity: sha512-+AfymNMVq9sEUe0OJpdCokmPZg4Zi6CqKaW/PnUOfDwEn53ighHOMOBl5hAgxYR8Kiz9NG43Bn00mkjWlFi+ng==}
-    dependencies:
-      '@babel/core': 7.22.9
-      '@babel/plugin-syntax-typescript': 7.21.4(@babel/core@7.22.9)
-      '@vanilla-extract/babel-plugin-debug-ids': 1.0.2
-      '@vanilla-extract/css': 1.14.0
-      esbuild: 0.17.6
-      eval: 0.1.8
-      find-up: 5.0.0
-      javascript-stringify: 2.1.0
-      lodash: 4.17.21
-      mlly: 1.4.0
-      outdent: 0.8.0
-      vite: 4.4.7(@types/node@18.19.17)
-      vite-node: 0.28.5(@types/node@18.19.17)
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-    dev: true
 
   /@vanilla-extract/integration@7.1.1(@types/node@18.19.17):
     resolution: {integrity: sha512-2JjDKL2HDTazis4oTkUFsQFUyw61k8oym9r0NOLSJC0JB0W25W1ryVZvDx74d3deIyB5AWbCselyzl3gja30kQ==}
@@ -11860,15 +11856,12 @@ packages:
       '@vanilla-extract/css': 1.14.0
     dev: false
 
-  /@vanilla-extract/vite-plugin@3.9.3(@types/node@18.19.17)(vite@5.1.4):
-    resolution: {integrity: sha512-bGyHG98OYTRs5roLRv7LDeyRnD72+vBLonk8cC9VG/xd6hsiHPPj5GyBwoKElT7DyDRfapxWLwLlhgYynrW2Fw==}
+  /@vanilla-extract/vite-plugin@4.0.4(@types/node@18.19.17)(vite@5.1.4):
+    resolution: {integrity: sha512-cfg4GK274xzwbVFh8YWvQXNnsCMemvMMwej7V93TTBP2O8qzyTgsx5VJuiAPov3oUU8JWGboaTs16Vnoe5bZ9w==}
     peerDependencies:
-      vite: ^2.2.3 || ^3.0.0 || ^4.0.3 || ^5.0.0
+      vite: ^4.0.3 || ^5.0.0
     dependencies:
-      '@vanilla-extract/integration': 6.2.4(@types/node@18.19.17)
-      outdent: 0.8.0
-      postcss: 8.4.35
-      postcss-load-config: 4.0.1(postcss@8.4.35)
+      '@vanilla-extract/integration': 7.1.1(@types/node@18.19.17)
       vite: 5.1.4(@types/node@18.19.17)
     transitivePeerDependencies:
       - '@types/node'
@@ -11879,7 +11872,6 @@ packages:
       - sugarss
       - supports-color
       - terser
-      - ts-node
     dev: true
 
   /@vanilla-extract/webpack-plugin@2.2.0(@types/node@18.19.17)(webpack@5.82.0):
@@ -11887,7 +11879,7 @@ packages:
     peerDependencies:
       webpack: ^4.30.0 || ^5.20.2
     dependencies:
-      '@vanilla-extract/integration': 6.2.1(@types/node@18.19.17)
+      '@vanilla-extract/integration': 6.2.4(@types/node@18.19.17)
       chalk: 4.1.2
       debug: 4.3.4
       loader-utils: 2.0.4
@@ -16035,6 +16027,7 @@ packages:
       '@esbuild/win32-arm64': 0.17.6
       '@esbuild/win32-ia32': 0.17.6
       '@esbuild/win32-x64': 0.17.6
+    dev: false
 
   /esbuild@0.18.17:
     resolution: {integrity: sha512-1GJtYnUxsJreHYA0Y+iQz2UEykonY66HNWOb0yXYZi9/kNrORUEHVg87eQsCtqh59PEJ5YVZJO98JHznMJSWjg==}
@@ -16952,20 +16945,12 @@ packages:
       - utf-8-validate
     dev: false
 
-  /eval@0.1.6:
-    resolution: {integrity: sha512-o0XUw+5OGkXw4pJZzQoXUk+H87DHuC+7ZE//oSrRGtatTmr12oTnLfg6QOq9DyTt0c/p4TwzgmkKrBzWTSizyQ==}
-    engines: {node: '>= 0.8'}
-    dependencies:
-      require-like: 0.1.2
-    dev: false
-
   /eval@0.1.8:
     resolution: {integrity: sha512-EzV94NYKoO09GLXGjXj9JIlXijVck4ONSr5wiCWDvhsvj5jxSrzTmRU/9C1DyB6uToszLs8aifA6NQ7lEQdvFw==}
     engines: {node: '>= 0.8'}
     dependencies:
       '@types/node': 18.19.17
       require-like: 0.1.2
-    dev: true
 
   /event-target-shim@5.0.1:
     resolution: {integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==}
@@ -18643,7 +18628,7 @@ packages:
       '@types/node': 17.0.45
       cookie: 0.5.0
       iron-webcrypto: 0.2.8
-      next: 14.1.0(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+      next: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /iron-webcrypto@0.2.8:
@@ -20225,6 +20210,7 @@ packages:
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
     engines: {node: '>=10'}
+    dev: false
 
   /lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
@@ -21638,7 +21624,7 @@ packages:
       '@panva/hkdf': 1.1.1
       cookie: 0.5.0
       jose: 4.14.4
-      next: 14.1.0(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+      next: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
       oauth: 0.9.15
       openid-client: 5.4.2
       preact: 10.13.2
@@ -21705,7 +21691,7 @@ packages:
     dependencies:
       '@formatjs/intl-localematcher': 0.2.32
       negotiator: 0.6.3
-      next: 13.4.19(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+      next: 13.4.19(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       use-intl: 2.20.2(react@18.2.0)
     dev: false
@@ -21738,7 +21724,7 @@ packages:
       next: 14.1.0(@babel/core@7.21.8)(@opentelemetry/api@1.1.0)(react-dom@18.2.0)(react@18.2.0)
     dev: true
 
-  /next@13.4.19(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0):
+  /next@13.4.19(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-HuPSzzAbJ1T4BD8e0bs6B9C1kWQ6gv8ykZoRWs5AQoiIuqbGHHdQO7Ljuvg05Q0Z24E2ABozHe6FxDvI6HfyAw==}
     engines: {node: '>=16.8.0'}
     hasBin: true
@@ -21760,7 +21746,7 @@ packages:
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      styled-jsx: 5.1.1(@babel/core@7.22.9)(react@18.2.0)
+      styled-jsx: 5.1.1(@babel/core@7.23.9)(react@18.2.0)
       watchpack: 2.4.0
       zod: 3.21.4
     optionalDependencies:
@@ -21803,44 +21789,6 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       styled-jsx: 5.1.1(@babel/core@7.21.8)(react@18.2.0)
-    optionalDependencies:
-      '@next/swc-darwin-arm64': 14.1.0
-      '@next/swc-darwin-x64': 14.1.0
-      '@next/swc-linux-arm64-gnu': 14.1.0
-      '@next/swc-linux-arm64-musl': 14.1.0
-      '@next/swc-linux-x64-gnu': 14.1.0
-      '@next/swc-linux-x64-musl': 14.1.0
-      '@next/swc-win32-arm64-msvc': 14.1.0
-      '@next/swc-win32-ia32-msvc': 14.1.0
-      '@next/swc-win32-x64-msvc': 14.1.0
-    transitivePeerDependencies:
-      - '@babel/core'
-      - babel-plugin-macros
-
-  /next@14.1.0(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-wlzrsbfeSU48YQBjZhDzOwhWhGsy+uQycR8bHAOt1LY1bn3zZEcDyHQOEoN3aWzQ8LHCAJ1nqrWCc9XF2+O45Q==}
-    engines: {node: '>=18.17.0'}
-    hasBin: true
-    peerDependencies:
-      '@opentelemetry/api': ^1.1.0
-      react: ^18.2.0
-      react-dom: ^18.2.0
-      sass: ^1.3.0
-    peerDependenciesMeta:
-      '@opentelemetry/api':
-        optional: true
-      sass:
-        optional: true
-    dependencies:
-      '@next/env': 14.1.0
-      '@swc/helpers': 0.5.2
-      busboy: 1.6.0
-      caniuse-lite: 1.0.30001589
-      graceful-fs: 4.2.11
-      postcss: 8.4.31
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      styled-jsx: 5.1.1(@babel/core@7.22.9)(react@18.2.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.1.0
       '@next/swc-darwin-x64': 14.1.0
@@ -23026,6 +22974,7 @@ packages:
       lilconfig: 2.1.0
       postcss: 8.4.35
       yaml: 2.2.2
+    dev: false
 
   /postcss-loader@6.2.1(postcss@8.4.6)(webpack@5.82.0):
     resolution: {integrity: sha512-WbbYpmAaKcux/P66bZ40bpWsBucjx/TTgVVzRZ9yUO8yQfVBlameJ0ZGVaPfH64hNSBh63a+ICP5nqOpBA0w+Q==}
@@ -25926,23 +25875,6 @@ packages:
       client-only: 0.0.1
       react: 18.2.0
 
-  /styled-jsx@5.1.1(@babel/core@7.22.9)(react@18.2.0):
-    resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
-    engines: {node: '>= 12.0.0'}
-    peerDependencies:
-      '@babel/core': '*'
-      babel-plugin-macros: '*'
-      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      babel-plugin-macros:
-        optional: true
-    dependencies:
-      '@babel/core': 7.22.9
-      client-only: 0.0.1
-      react: 18.2.0
-
   /styled-jsx@5.1.1(@babel/core@7.23.9)(react@18.2.0):
     resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
     engines: {node: '>= 12.0.0'}
@@ -27130,6 +27062,7 @@ packages:
       - sugarss
       - supports-color
       - terser
+    dev: false
 
   /vite-node@0.33.0(@types/node@18.16.12):
     resolution: {integrity: sha512-19FpHYbwWWxDr73ruNahC+vtEdza52kA90Qb3La98yZ0xULqV8A5JLNPUff0f5zID4984tW7l3DH2przTJUZSw==}
@@ -27243,6 +27176,7 @@ packages:
       rollup: 3.26.3
     optionalDependencies:
       fsevents: 2.3.3
+    dev: false
 
   /vite@5.0.7(@types/node@18.19.17):
     resolution: {integrity: sha512-B4T4rJCDPihrQo2B+h1MbeGL/k/GMAHzhQ8S0LjQ142s6/+l3hHTT095ORvsshj4QCkoWu3Xtmob5mazvakaOw==}
