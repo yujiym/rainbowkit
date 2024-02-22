@@ -55,6 +55,7 @@ export function DocsLayout({ children }: { children: React.ReactNode }) {
     true,
   ) as Ref<HTMLDivElement>;
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: safe to ignore
   const handleRouteChange = useCallback(() => {
     setIsOpen(false);
   }, [setIsOpen]);

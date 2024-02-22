@@ -78,9 +78,7 @@ export function QRCode({
     const matrixMiddleStart = matrix.length / 2 - clearArenaSize / 2;
     const matrixMiddleEnd = matrix.length / 2 + clearArenaSize / 2 - 1;
 
-    // biome-ignore lint/complexity/noForEach: TODO
     matrix.forEach((row: QRCodeUtil.QRCode[], i: number) => {
-      // biome-ignore lint/complexity/noForEach: TODO
       row.forEach((_: any, j: number) => {
         if (matrix[i][j]) {
           if (

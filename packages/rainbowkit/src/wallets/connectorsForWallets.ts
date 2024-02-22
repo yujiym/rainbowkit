@@ -48,7 +48,6 @@ export const connectorsForWallets = (
     appIcon,
   });
 
-  // biome-ignore lint/complexity/noForEach: TODO
   walletList.forEach(({ groupName, wallets }, groupIndex) => {
     // biome-ignore lint/complexity/noForEach: TODO
     wallets.forEach((createWallet) => {

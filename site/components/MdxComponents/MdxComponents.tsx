@@ -144,6 +144,7 @@ export const components = {
     const [code, setCode] = React.useState(undefined);
     const preRef = React.useRef(null);
 
+    // biome-ignore lint/correctness/useExhaustiveDependencies: safe to ignore
     React.useEffect(() => {
       if (preRef.current) {
         const codeElement = preRef.current.querySelector('code');
