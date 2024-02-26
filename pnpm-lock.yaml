@@ -342,8 +342,8 @@ importers:
         specifier: 2.4.9
         version: 2.4.9
       '@types/validate-npm-package-name':
-        specifier: 3.0.3
-        version: 3.0.3
+        specifier: 4.0.2
+        version: 4.0.2
 
   packages/create-rainbowkit/generated-test-app:
     dependencies:
@@ -10815,8 +10815,8 @@ packages:
   /@types/unist@3.0.2:
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
 
-  /@types/validate-npm-package-name@3.0.3:
-    resolution: {integrity: sha512-dLhCHEIjf9++/vHaHCo/ngJzGqGGbPh/f7HKwznEk3WFL64t/VKuRiVpyQH4afX93YkCV94I9M0Cx+DBLk1Dsg==}
+  /@types/validate-npm-package-name@4.0.2:
+    resolution: {integrity: sha512-lrpDziQipxCEeK5kWxvljWYhUvOiB2A9izZd9B2AFarYAkqZshb4lPbRs7zKEic6eGtH8V/2qJW+dPp9OtF6bw==}
     dev: true
 
   /@types/webxr@0.5.14:
