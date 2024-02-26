@@ -571,8 +571,8 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       deepmerge:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.3.1
+        version: 4.3.1
       framer-motion:
         specifier: ^11.0.6
         version: 11.0.6(react-dom@18.2.0)(react@18.2.0)
@@ -1110,7 +1110,7 @@ packages:
       '@babel/compat-data': 7.22.9
       '@babel/core': 7.16.0
       '@babel/helper-validator-option': 7.22.5
-      browserslist: 4.22.2
+      browserslist: 4.21.9
       lru-cache: 5.1.1
       semver: 6.3.1
     dev: false
@@ -1138,7 +1138,7 @@ packages:
       '@babel/compat-data': 7.22.9
       '@babel/core': 7.21.8
       '@babel/helper-validator-option': 7.22.5
-      browserslist: 4.22.2
+      browserslist: 4.21.9
       lru-cache: 5.1.1
       semver: 6.3.1
     dev: true
@@ -1152,7 +1152,7 @@ packages:
       '@babel/compat-data': 7.22.9
       '@babel/core': 7.22.9
       '@babel/helper-validator-option': 7.22.5
-      browserslist: 4.22.2
+      browserslist: 4.21.9
       lru-cache: 5.1.1
       semver: 6.3.1
 
@@ -1165,7 +1165,7 @@ packages:
       '@babel/compat-data': 7.22.9
       '@babel/core': 7.23.9
       '@babel/helper-validator-option': 7.22.5
-      browserslist: 4.22.2
+      browserslist: 4.21.9
       lru-cache: 5.1.1
       semver: 6.3.1
 
