@@ -33,7 +33,7 @@
     "rehype-parse": "8.0.4",
     "remark-slug": "^7.0.1",
     "three": "^0.161.0",
-    "unified": "10.1.2",
+    "unified": "11.0.4",
     "unist-util-visit": "4.1.0",
     "viem": "^2.7.12",
     "wagmi": "^2.5.7",
