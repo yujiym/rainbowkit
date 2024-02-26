@@ -542,10 +542,10 @@ importers:
         version: link:../packages/rainbowkit
       '@react-spring/three':
         specifier: ^9.4.4
-        version: 9.4.4(@react-three/fiber@8.0.12)(react@18.2.0)(three@0.139.2)
+        version: 9.4.4(@react-three/fiber@8.0.12)(react@18.2.0)(three@0.161.0)
       '@react-three/fiber':
         specifier: ^8.0.12
-        version: 8.0.12(react-dom@18.2.0)(react-native@0.73.3)(react@18.2.0)(three@0.139.2)
+        version: 8.0.12(react-dom@18.2.0)(react-native@0.73.3)(react@18.2.0)(three@0.161.0)
       '@tanstack/react-query':
         specifier: ^5.24.1
         version: 5.24.1(react@18.2.0)
@@ -610,8 +610,8 @@ importers:
         specifier: ^7.0.1
         version: 7.0.1
       three:
-        specifier: ^0.139.2
-        version: 0.139.2
+        specifier: ^0.161.0
+        version: 0.161.0
       unified:
         specifier: 10.1.2
         version: 10.1.2
@@ -9528,7 +9528,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@react-spring/three@9.4.4(@react-three/fiber@8.0.12)(react@18.2.0)(three@0.139.2):
+  /@react-spring/three@9.4.4(@react-three/fiber@8.0.12)(react@18.2.0)(three@0.161.0):
     resolution: {integrity: sha512-z77ohxg8zG0CcZJojzfoJTTrjSbIyefNz2RlId68/4IypnOs1p8kB2Q1p+wX4KyWORpLg8ivsPcjtwBjGwfDtg==}
     peerDependencies:
       '@react-three/fiber': '>=6.0'
@@ -9539,16 +9539,16 @@ packages:
       '@react-spring/core': 9.4.5(react@18.2.0)
       '@react-spring/shared': 9.4.5(react@18.2.0)
       '@react-spring/types': 9.4.5
-      '@react-three/fiber': 8.0.12(react-dom@18.2.0)(react-native@0.73.3)(react@18.2.0)(three@0.139.2)
+      '@react-three/fiber': 8.0.12(react-dom@18.2.0)(react-native@0.73.3)(react@18.2.0)(three@0.161.0)
       react: 18.2.0
-      three: 0.139.2
+      three: 0.161.0
     dev: false
 
   /@react-spring/types@9.4.5:
     resolution: {integrity: sha512-mpRIamoHwql0ogxEUh9yr4TP0xU5CWyZxVQeccGkHHF8kPMErtDXJlxyo0lj+telRF35XNihtPTWoflqtyARmg==}
     dev: false
 
-  /@react-three/fiber@8.0.12(react-dom@18.2.0)(react-native@0.73.3)(react@18.2.0)(three@0.139.2):
+  /@react-three/fiber@8.0.12(react-dom@18.2.0)(react-native@0.73.3)(react@18.2.0)(three@0.161.0):
     resolution: {integrity: sha512-McYcJDlkksn9LlIhE2A4Y2scZOtKfX1ia3+7EvpFjFozFJx0Ecszi7atlizOvesIa9nG9VQWQCvjQxu9L0/TmA==}
     peerDependencies:
       expo: '>=43.0'
@@ -9580,7 +9580,7 @@ packages:
       react-use-measure: 2.1.1(react-dom@18.2.0)(react@18.2.0)
       scheduler: 0.21.0
       suspend-react: 0.0.8(react@18.2.0)
-      three: 0.139.2
+      three: 0.161.0
       zustand: 3.7.2(react@18.2.0)
     dev: false
 
@@ -25234,8 +25234,8 @@ packages:
     dependencies:
       real-require: 0.1.0
 
-  /three@0.139.2:
-    resolution: {integrity: sha512-gV7q7QY8rogu7HLFZR9cWnOQAUedUhu2WXAnpr2kdXZP9YDKsG/0ychwQvWkZN5PlNw9mv5MoCTin6zNTXoONg==}
+  /three@0.161.0:
+    resolution: {integrity: sha512-LC28VFtjbOyEu5b93K0bNRLw1rQlMJ85lilKsYj6dgTu+7i17W+JCCEbvrpmNHF1F3NAUqDSWq50UD7w9H2xQw==}
     dev: false
 
   /throat@5.0.0:
