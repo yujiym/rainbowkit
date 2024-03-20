@@ -59,7 +59,6 @@ export function ConnectButton({
         account,
         chain,
         mounted,
-        disconnecting,
         openAccountModal,
         openChainModal,
         openConnectModal,
@@ -80,10 +79,7 @@ export function ConnectButton({
               },
             })}
           >
-            {ready &&
-            account &&
-            !disconnecting &&
-            connectionStatus === 'connected' ? (
+            {ready && account && connectionStatus === 'connected' ? (
               <>
                 {chain && (chains.length > 1 || unsupportedChain) && (
                   <Box
@@ -283,7 +279,6 @@ export function ConnectButton({
                 fontWeight="bold"
                 height="40"
                 key="connect"
-                disabled={disconnecting}
                 onClick={openConnectModal}
                 paddingX="14"
                 testId="connect-button"
