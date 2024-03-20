@@ -10,7 +10,6 @@ import { DisconnectSqIcon } from '../Icons/DisconnectSq';
 import { MenuButton } from '../MenuButton/MenuButton';
 import { I18nContext } from '../RainbowKitProvider/I18nContext';
 import { useRainbowKitChains } from '../RainbowKitProvider/RainbowKitChainContext';
-import { useRainbowKitWagmiState } from '../RainbowKitProvider/RainbowKitWagmiStateProvider';
 import { Text } from '../Text/Text';
 import Chain from './Chain';
 import {
@@ -46,14 +45,8 @@ export function ChainModal({ onClose, open }: ChainModalProps) {
 
   const { i18n } = useContext(I18nContext);
 
-  const { disconnect } = useDisconnect({
-    mutation: {
-      onSuccess: () => setIsDisconnecting(false),
-      onError: () => setIsDisconnecting(false),
-    },
-  });
+  const { disconnect } = useDisconnect();
 
-  const { setIsDisconnecting } = useRainbowKitWagmiState();
   const titleId = 'rk_chain_modal_title';
   const mobile = isMobile();
   const isCurrentChainSupported = chains.some((chain) => chain.id === chainId);
@@ -126,7 +119,6 @@ export function ChainModal({ onClose, open }: ChainModalProps) {
                 <MenuButton
                   onClick={() => {
                     onClose();
-                    setIsDisconnecting(true);
                     disconnect();
                   }}
                   testId="chain-option-disconnect"
