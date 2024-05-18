@@ -1,23 +1,23 @@
-import { useState } from 'react';
+import { json } from '@remix-run/node';
+import type {
+  LinksFunction,
+  LoaderFunction,
+  MetaFunction,
+} from '@remix-run/node';
 import {
-  Meta,
   Links,
+  LiveReload,
+  Meta,
   Outlet,
   Scripts,
-  LiveReload,
   ScrollRestoration,
   useLoaderData,
 } from '@remix-run/react';
-import { json } from '@remix-run/node';
-import type {
-  MetaFunction,
-  LinksFunction,
-  LoaderFunction,
-} from '@remix-run/node';
+import { useState } from 'react';
 
 import {
-  RainbowKitProvider,
   ConnectButton,
+  RainbowKitProvider,
   getDefaultConfig,
 } from '@rainbow-me/rainbowkit';
 import { WagmiProvider } from 'wagmi';
@@ -31,21 +31,21 @@ import {
   sepolia,
 } from 'wagmi/chains';
 
-import globalStylesUrl from './styles/global.css';
 import rainbowStylesUrl from '@rainbow-me/rainbowkit/styles.css';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import globalStylesUrl from './styles/global.css';
 
 type Env = { PUBLIC_ENABLE_TESTNETS?: string };
 
 type LoaderData = { ENV: Env };
 
-export const meta: MetaFunction = () => ([
+export const meta: MetaFunction = () => [
   {
     charset: 'utf-8',
     title: 'RainbowKit Remix Example',
     viewport: 'width=device-width,initial-scale=1',
   },
-]);
+];
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: globalStylesUrl },

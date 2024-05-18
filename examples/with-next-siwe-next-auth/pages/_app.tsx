@@ -1,17 +1,11 @@
-import '../styles/global.css';
 import '@rainbow-me/rainbowkit/styles.css';
+import '../styles/global.css';
+
+import type { Session } from 'next-auth';
+import { SessionProvider } from 'next-auth/react';
 import type { AppProps } from 'next/app';
 
-import {
-  RainbowKitProvider,
-  getDefaultWallets,
-  getDefaultConfig,
-} from '@rainbow-me/rainbowkit';
-import {
-  argentWallet,
-  trustWallet,
-  ledgerWallet,
-} from '@rainbow-me/rainbowkit/wallets';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { WagmiProvider } from 'wagmi';
 import {
   arbitrum,
@@ -22,13 +16,20 @@ import {
   sepolia,
 } from 'wagmi/chains';
 
-import { SessionProvider } from 'next-auth/react';
-import type { Session } from 'next-auth';
 import {
-  RainbowKitSiweNextAuthProvider,
+  RainbowKitProvider,
+  getDefaultConfig,
+  getDefaultWallets,
+} from '@rainbow-me/rainbowkit';
+import {
   GetSiweMessageOptions,
+  RainbowKitSiweNextAuthProvider,
 } from '@rainbow-me/rainbowkit-siwe-next-auth';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import {
+  argentWallet,
+  ledgerWallet,
+  trustWallet,
+} from '@rainbow-me/rainbowkit/wallets';
 
 const { wallets } = getDefaultWallets();
 

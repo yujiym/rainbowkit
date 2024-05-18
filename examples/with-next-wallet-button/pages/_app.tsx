@@ -1,14 +1,17 @@
-import '../styles/global.css';
 import '@rainbow-me/rainbowkit/styles.css';
+import '../styles/global.css';
+
 import type { AppProps } from 'next/app';
-import { createConfig, http, WagmiProvider } from 'wagmi';
-import {
-  connectorsForWallets,
-  RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
-import { coinbaseWallet, walletConnect } from 'wagmi/connectors';
-import { mainnet } from 'wagmi/chains';
+
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { http, WagmiProvider, createConfig } from 'wagmi';
+import { mainnet } from 'wagmi/chains';
+import { coinbaseWallet, walletConnect } from 'wagmi/connectors';
+
+import {
+  RainbowKitProvider,
+  connectorsForWallets,
+} from '@rainbow-me/rainbowkit';
 import { metaMaskWallet, rainbowWallet } from '@rainbow-me/rainbowkit/wallets';
 
 const projectId = 'YOUR_PROJECT_ID';

@@ -1,5 +1,6 @@
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import type { Locale } from '@rainbow-me/rainbowkit';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+
 import { Providers } from './providers';
 
 export function generateStaticParams() {
@@ -7,12 +8,12 @@ export function generateStaticParams() {
 }
 
 // Dynamic metadata with locale
-export async function generateMetadata(
-  { params: { locale } }: { params: { locale: Locale } }
-) {
+export async function generateMetadata({
+  params: { locale },
+}: { params: { locale: Locale } }) {
   const t = await getTranslations({ locale, namespace: 'Metadata' });
   return {
-    title: t('title')
+    title: t('title'),
   };
 }
 

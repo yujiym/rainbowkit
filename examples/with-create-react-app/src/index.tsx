@@ -1,10 +1,13 @@
 import '@rainbow-me/rainbowkit/styles.css';
-import './polyfills';
 import './index.css';
+import './polyfills';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { WagmiProvider } from 'wagmi';
 import {
   arbitrum,
@@ -15,8 +18,7 @@ import {
   sepolia,
 } from 'wagmi/chains';
 
-import App from './App';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { RainbowKitProvider, getDefaultConfig } from '@rainbow-me/rainbowkit';
 
 const config = getDefaultConfig({
   appName: 'RainbowKit demo',
@@ -32,7 +34,7 @@ const config = getDefaultConfig({
 });
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLElement,
 );
 
 const queryClient = new QueryClient();
@@ -46,7 +48,7 @@ root.render(
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

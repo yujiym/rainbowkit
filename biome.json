@@ -6,8 +6,7 @@
       "pnpm-lock.yaml",
       "tsconfig.json",
       "tsconfig.*.json",
-      "examples/*",
-      "*-app"
+      "**/build"
     ]
   },
   "formatter": {

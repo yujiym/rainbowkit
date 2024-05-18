@@ -1,7 +1,7 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
 
-let AnimatedBox = motion.div;
+const AnimatedBox = motion.div;
 
 // Framer animations
 const duration = 0.3;

@@ -1,15 +1,18 @@
-import React from 'react';
-import Image from 'next/image';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
+import Image from 'next/image';
+import React from 'react';
+
 import {
   useAccount,
   useReadContract,
   useWaitForTransactionReceipt,
   useWriteContract,
 } from 'wagmi';
-import { abi } from '../contract-abi';
+
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+
 import FlipCard, { BackCard, FrontCard } from '../components/FlipCard';
+import { abi } from '../contract-abi';
 
 const contractConfig = {
   address: '0x86fbbb1254c39602a7b067d5ae7e5c2bdfd61a30',
@@ -18,7 +21,7 @@ const contractConfig = {
 
 const Home: NextPage = () => {
   const [mounted, setMounted] = React.useState(false);
-  React.useEffect(() => setMounted(true), []);
+  React.useEffect(() => setMounted(true), [setMounted]);
 
   const [totalMinted, setTotalMinted] = React.useState(0n);
   const { isConnected } = useAccount();
@@ -51,7 +54,7 @@ const Home: NextPage = () => {
     if (totalSupplyData) {
       setTotalMinted(totalSupplyData);
     }
-  }, [totalSupplyData]);
+  }, [totalSupplyData, setTotalMinted]);
 
   const isMinted = txSuccess;
 

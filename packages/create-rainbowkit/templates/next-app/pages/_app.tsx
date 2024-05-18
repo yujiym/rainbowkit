@@ -1,5 +1,6 @@
-import '../styles/globals.css';
 import '@rainbow-me/rainbowkit/styles.css';
+import '../styles/globals.css';
+
 import type { AppProps } from 'next/app';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -12,7 +13,8 @@ import {
   polygon,
   sepolia,
 } from 'wagmi/chains';
-import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+
+import { RainbowKitProvider, getDefaultConfig } from '@rainbow-me/rainbowkit';
 
 const config = getDefaultConfig({
   appName: 'RainbowKit App',

@@ -1,6 +1,7 @@
-import type { NextPage } from "next";
-import { useAccount, useConnect, useDisconnect } from "wagmi";
-import { WalletButton } from "@rainbow-me/rainbowkit";
+import type { NextPage } from 'next';
+import { useAccount, useConnect, useDisconnect } from 'wagmi';
+
+import { WalletButton } from '@rainbow-me/rainbowkit';
 
 const Home: NextPage = () => {
   const { isConnected } = useAccount();
@@ -11,18 +12,18 @@ const Home: NextPage = () => {
   return (
     <div
       style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
       }}
     >
       <div
         style={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column',
           gap: 14,
         }}
       >

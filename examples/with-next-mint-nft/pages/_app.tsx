@@ -1,16 +1,18 @@
-import '../styles/global.css';
 import '@rainbow-me/rainbowkit/styles.css';
+import '../styles/global.css';
+
 import type { AppProps } from 'next/app';
+
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { WagmiProvider } from 'wagmi';
+import { sepolia } from 'wagmi/chains';
 
 import {
   RainbowKitProvider,
+  getDefaultConfig,
   getDefaultWallets,
-  getDefaultConfig
 } from '@rainbow-me/rainbowkit';
 import { argentWallet, trustWallet } from '@rainbow-me/rainbowkit/wallets';
-import { WagmiProvider } from 'wagmi';
-import { sepolia } from 'wagmi/chains';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const { wallets } = getDefaultWallets();
 

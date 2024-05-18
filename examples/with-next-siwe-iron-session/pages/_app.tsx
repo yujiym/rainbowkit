@@ -1,23 +1,14 @@
 // This example is based on the wagmi SIWE tutorial
 // https://wagmi.sh/examples/sign-in-with-ethereum
-import '../styles/global.css';
+
 import '@rainbow-me/rainbowkit/styles.css';
+import '../styles/global.css';
+
 import type { AppProps } from 'next/app';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-import {
-  RainbowKitProvider,
-  getDefaultWallets,
-  createAuthenticationAdapter,
-  RainbowKitAuthenticationProvider,
-  AuthenticationStatus,
-  getDefaultConfig,
-} from '@rainbow-me/rainbowkit';
-import {
-  argentWallet,
-  trustWallet,
-  ledgerWallet,
-} from '@rainbow-me/rainbowkit/wallets';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { SiweMessage } from 'siwe';
 import { WagmiProvider } from 'wagmi';
 import {
   arbitrum,
@@ -27,8 +18,20 @@ import {
   polygon,
   sepolia,
 } from 'wagmi/chains';
-import { SiweMessage } from 'siwe';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+import {
+  AuthenticationStatus,
+  RainbowKitAuthenticationProvider,
+  RainbowKitProvider,
+  createAuthenticationAdapter,
+  getDefaultConfig,
+  getDefaultWallets,
+} from '@rainbow-me/rainbowkit';
+import {
+  argentWallet,
+  ledgerWallet,
+  trustWallet,
+} from '@rainbow-me/rainbowkit/wallets';
 
 const { wallets } = getDefaultWallets();
 
@@ -128,7 +131,7 @@ export default function App({ Component, pageProps }: AppProps) {
           }
 
           return authenticated;
-        } catch (error) {
+        } catch (_error) {
           return false;
         } finally {
           verifyingRef.current = false;
